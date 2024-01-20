@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-
+import CustomNavbar from "./components/CustomNavbar.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect, useState } from 'react';
 function App() {
+
+  const [mode,setMode] = useState("light");
+  
+  useEffect(()=>{
+    var curr_mode = localStorage.getItem("mode");
+    console.log("curr_mode",curr_mode);
+    if(curr_mode === null){
+      setMode("light");
+    }
+    else{
+      setMode(curr_mode);
+    }
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-theme={mode}>
+      <div className="container-body">
+      <CustomNavbar mode={mode} setMode={setMode} ></CustomNavbar>
+      </div>
     </div>
   );
 }

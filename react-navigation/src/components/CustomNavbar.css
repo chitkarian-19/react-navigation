@@ -1,0 +1,125 @@
+body {
+  color: var(--text-color);
+}
+body nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1019607843);
+  background-color: var(--nav-background);
+}
+body nav .custom-container {
+  max-width: unset;
+}
+body nav .navbar_brand {
+  display: flex;
+  color: var(--text-color);
+}
+body nav .navbar_brand .navbar_logo {
+  flex: 0 0 auto;
+  height: 2rem;
+}
+body nav .navbar_brand .navbar_logo_text {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav .navbar_brand .brand-image {
+  height: 100%;
+}
+body nav .navbar_brand:hover {
+  color: var(--hover-color) !important;
+}
+body nav .navbar-nav a {
+  color: var(--text-color);
+  font-weight: 500;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+body nav .navbar-collapse {
+  text-align: left !important;
+}
+body nav .view-mode-button {
+  border: none;
+  background-color: white;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+body nav .nav-link:hover {
+  color: var(--hover-color);
+}
+body nav .view-mode-button:hover {
+  background-color: var(--theme-button-hover-color);
+}
+body nav .colorMode {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+body nav .searchButton {
+  background: var(--search-background);
+  border: 0;
+  border-radius: 40px;
+  color: "#969faf";
+  cursor: pointer;
+  font-weight: 500;
+  height: 36px;
+  justify-content: space-between;
+  padding: 0 8px;
+  display: flex;
+  color: var(--search-button-color);
+}
+body nav .searchButton:hover {
+  box-shadow: var(--hover-search-box-shadow);
+  color: var(--hover-search-color);
+}
+body nav .search-container {
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body nav .search-container .search-icon {
+  stroke-width: 1.6;
+}
+body nav .search-container .search-placeholder {
+  font-size: 1rem;
+  padding: 0 12px 0 6px;
+}
+body nav .searchButtonKeys {
+  display: flex;
+  min-width: calc(40px + 0.8em);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body nav .searchButtonKey {
+  align-items: center;
+  background: var(--keyboard-button-background);
+  border: 0;
+  border-radius: 3px;
+  box-shadow: var(--keyboard-button-box-shadow);
+  color: var(--keyboard-button-color);
+  display: flex;
+  height: 18px;
+  justify-content: center;
+  margin-right: 0.4em;
+  padding: 0 0 2px;
+  position: relative;
+  top: -1px;
+  width: 20px;
+}
+body nav .navbar-toggle {
+  border: none;
+  background-color: var(--toggle-background-color);
+}
+body nav .navbar-toggler-icon {
+  background-image: var(--toggle-background-image);
+}
+body nav .display-none {
+  display: none !important;
+}/*# sourceMappingURL=CustomNavbar.css.map */
